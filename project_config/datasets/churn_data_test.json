@@ -1,0 +1,225 @@
+{
+  "type": "S3",
+  "managed": true,
+  "featureGroup": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT",
+    "ignoreErrorStatusOnBuild": false
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "escape_only_no_quote",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "arrayItemSeparator": "\u0002",
+    "mapKeySeparator": "\u0003",
+    "dateSerializationFormat": "HIVE",
+    "arrayMapFormat": "hive",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "shreyaathaakurr@gmail.com"
+    },
+    "lastModifiedOn": 1751004671663
+  },
+  "tags": [],
+  "params": {
+    "bucket": "gis-data-us-east-1",
+    "metastoreSynchronizationEnabled": true,
+    "metastoreDatabaseName": "default",
+    "metastoreTableName": "${projectKey}_churn_data_test",
+    "connection": "dataiku-managed-storage",
+    "path": "/managed-dss-data/${projectKey}/churn_data_test",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    },
+    "variablesExpansionLoopConfig": {
+      "enabled": false,
+      "mode": "CREATE_VARIABLE_FOR_EACH_COLUMN",
+      "replacements": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"80_State","type":"string"},
+      {"name":"80_Account length","type":"string"},
+      {"name":"80_Area code","type":"string"},
+      {"name":"80_International plan","type":"string"},
+      {"name":"80_Voice mail plan","type":"string"},
+      {"name":"80_Number vmail messages","type":"string"},
+      {"name":"80_Total day minutes","type":"string"},
+      {"name":"80_Total day calls","type":"string"},
+      {"name":"80_Total day charge","type":"string"},
+      {"name":"80_Total eve minutes","type":"string"},
+      {"name":"80_Total eve calls","type":"string"},
+      {"name":"80_Total eve charge","type":"string"},
+      {"name":"80_Total night minutes","type":"string"},
+      {"name":"80_total minutes","type":"double"},
+      {"name":"80_Total night calls","type":"string"},
+      {"name":"80_Total calls","type":"bigint"},
+      {"name":"80_Total night charge","type":"string"},
+      {"name":"80_Total intl minutes","type":"string"},
+      {"name":"80_Total intl calls","type":"string"},
+      {"name":"80_Total intl charge","type":"string"},
+      {"name":"80_Customer service calls","type":"string"},
+      {"name":"80_Churn","type":"string"},
+      {"name":"20_State","type":"string"},
+      {"name":"20_Account length","type":"string"},
+      {"name":"20_Area code","type":"string"},
+      {"name":"20_International plan","type":"string"},
+      {"name":"20_Voice mail plan","type":"string"},
+      {"name":"20_Number vmail messages","type":"string"},
+      {"name":"20_Total day minutes","type":"string"},
+      {"name":"20_Total day calls","type":"string"},
+      {"name":"20_Total day charge","type":"string"},
+      {"name":"20_Total eve minutes","type":"string"},
+      {"name":"20_Total eve calls","type":"string"},
+      {"name":"20_Total eve charge","type":"string"},
+      {"name":"20_Total night minutes","type":"string"},
+      {"name":"20_Total night calls","type":"string"},
+      {"name":"20_Total night charge","type":"string"},
+      {"name":"20_Total intl minutes","type":"string"},
+      {"name":"20_Total intl calls","type":"string"},
+      {"name":"20_Total intl charge","type":"string"},
+      {"name":"20_Customer service calls","type":"string"},
+      {"name":"20_Churn","type":"string"}
+    ],
+    "userModified": true
+  },
+  "typeSystemVersion": "V2",
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "monitor": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}

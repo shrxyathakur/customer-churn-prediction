@@ -1,0 +1,80 @@
+{
+  "pages": [
+    {
+      "id": "YvrfIqi",
+      "grid": {
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 1,
+              "width": 15,
+              "height": 8
+            },
+            "clickAction": "DO_NOTHING",
+            "tileParams": {
+              "showXAxis": true,
+              "showYAxis": true,
+              "showLegend": false,
+              "showBrush": false,
+              "inheritLegendPlacement": true,
+              "legendPlacement": "OUTER_RIGHT",
+              "showTooltips": true,
+              "autoPlayAnimation": true
+            },
+            "backgroundOpacity": 1.0,
+            "autoLoad": true,
+            "locked": false,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "titleOptions": {
+              "showTitle": "YES",
+              "fontColor": "#000",
+              "fontSize": 13
+            },
+            "insightId": "LF0wkkb",
+            "insightType": "chart",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
+      },
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#ffffff",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    }
+  ],
+  "owner": "shreyaathaakurr@gmail.com",
+  "listed": true,
+  "name": "customer_churn_prediction\u0027s default dashboard",
+  "showGrid": false,
+  "columnNumber": 36,
+  "showNavigationArrows": false,
+  "reloadWhenEventReceived": false,
+  "tileSpacing": 8,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "shreyaathaakurr@gmail.com"
+    },
+    "lastModifiedOn": 1750658105733
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "churn_bigml_80_joined",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "ascending": false,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1,
+      "seed": 1337
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "80_Churn",
+          "type": "CATEGORICAL"
+        },
+        "showMosaicPlot": false,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": false,
+        "showBoxPlot": false,
+        "showSummary": false,
+        "xColumns": [
+          {
+            "name": "80_Voice mail plan",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "80_Voice mail plan",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "80_Voice mail plan",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "80_Churn",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9JKQO3r"
+              }
+            ],
+            "id": "24n72cA"
+          }
+        ],
+        "id": "f3nDGsa"
+      }
+    ],
+    "id": "vSpbLxY"
+  },
+  "name": "Worksheet",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "shreyaathaakurr@gmail.com"
+    },
+    "lastModifiedOn": 1750665929942
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

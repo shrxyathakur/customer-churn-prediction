@@ -1,0 +1,329 @@
+{
+  "columnsSelection": {
+    "mode": "ALL",
+    "list": [
+      {
+        "d": true,
+        "name": "80_State"
+      },
+      {
+        "d": true,
+        "name": "80_Account length"
+      },
+      {
+        "d": true,
+        "name": "80_Area code"
+      },
+      {
+        "d": true,
+        "name": "80_International plan"
+      },
+      {
+        "d": true,
+        "name": "80_Voice mail plan"
+      },
+      {
+        "d": true,
+        "name": "80_Number vmail messages"
+      },
+      {
+        "d": true,
+        "name": "80_Total day minutes"
+      },
+      {
+        "d": true,
+        "name": "80_Total day calls"
+      },
+      {
+        "d": true,
+        "name": "80_Total day charge"
+      },
+      {
+        "d": true,
+        "name": "80_Total eve minutes"
+      },
+      {
+        "d": true,
+        "name": "80_Total eve calls"
+      },
+      {
+        "d": true,
+        "name": "80_Total eve charge"
+      },
+      {
+        "d": true,
+        "name": "80_Total night minutes"
+      },
+      {
+        "d": true,
+        "name": "80_total minutes"
+      },
+      {
+        "d": true,
+        "name": "80_Total night calls"
+      },
+      {
+        "d": true,
+        "name": "80_Total calls"
+      },
+      {
+        "d": true,
+        "name": "80_Total night charge"
+      },
+      {
+        "d": true,
+        "name": "80_Total intl minutes"
+      },
+      {
+        "d": true,
+        "name": "80_Total intl calls"
+      },
+      {
+        "d": true,
+        "name": "80_Total intl charge"
+      },
+      {
+        "d": true,
+        "name": "80_Customer service calls"
+      },
+      {
+        "d": true,
+        "name": "80_Churn"
+      },
+      {
+        "d": true,
+        "name": "20_State"
+      },
+      {
+        "d": true,
+        "name": "20_Account length"
+      },
+      {
+        "d": true,
+        "name": "20_Area code"
+      },
+      {
+        "d": true,
+        "name": "20_International plan"
+      },
+      {
+        "d": true,
+        "name": "20_Voice mail plan"
+      },
+      {
+        "d": true,
+        "name": "20_Number vmail messages"
+      },
+      {
+        "d": true,
+        "name": "20_Total day minutes"
+      },
+      {
+        "d": true,
+        "name": "20_Total day calls"
+      },
+      {
+        "d": true,
+        "name": "20_Total day charge"
+      },
+      {
+        "d": true,
+        "name": "20_Total eve minutes"
+      },
+      {
+        "d": true,
+        "name": "20_Total eve calls"
+      },
+      {
+        "d": true,
+        "name": "20_Total eve charge"
+      },
+      {
+        "d": true,
+        "name": "20_Total night minutes"
+      },
+      {
+        "d": true,
+        "name": "20_Total night calls"
+      },
+      {
+        "d": true,
+        "name": "20_Total night charge"
+      },
+      {
+        "d": true,
+        "name": "20_Total intl minutes"
+      },
+      {
+        "d": true,
+        "name": "20_Total intl calls"
+      },
+      {
+        "d": true,
+        "name": "20_Total intl charge"
+      },
+      {
+        "d": true,
+        "name": "20_Customer service calls"
+      },
+      {
+        "d": true,
+        "name": "20_Churn"
+      }
+    ]
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "maxStoredBytes": 104857600,
+      "ascending": true,
+      "timeout": -1,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnOrder": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"80_Total day minutes\")+val(\"80_Total eve minutes\")+val(\"80_Total night minutes\")\n",
+        "column": "80_total minutes"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "val(\"80_Total day calls\")+val(\"80_Total eve calls\") + val(\"80_Total night calls\")",
+        "column": "80_Total calls"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FilterOnNumericalRange",
+      "params": {
+        "min": 3.0,
+        "max": 60.0,
+        "booleanMode": "AND",
+        "columns": [
+          "80_Total day charge"
+        ],
+        "action": "KEEP_ROW",
+        "appliesTo": "SINGLE_COLUMN",
+        "includeEmptyValues": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL",
+      "ascending": true
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "80_Total night charge": 173,
+    "20_Total day calls": 150,
+    "20_Number vmail messages": 195,
+    "20_Total night calls": 165,
+    "20_Total intl charge": 165,
+    "80_Total night minutes": 180,
+    "80_Total eve calls": 150,
+    "20_Total eve minutes": 165,
+    "80_Total calls": 120,
+    "80_Area code": 105,
+    "80_Total eve minutes": 165,
+    "20_Total eve charge": 158,
+    "80_total minutes": 135,
+    "80_Total day calls": 150,
+    "20_Total night charge": 173,
+    "80_Total day minutes": 165,
+    "80_Customer service calls": 203,
+    "80_Total night calls": 165,
+    "80_International plan": 173,
+    "20_Total day charge": 158,
+    "80_Voice mail plan": 150,
+    "20_Total eve calls": 150,
+    "80_Total day charge": 158,
+    "20_Account length": 143,
+    "80_Account length": 143,
+    "80_Total intl minutes": 173,
+    "20_Total day minutes": 165,
+    "20_Churn": 100,
+    "20_Total night minutes": 180,
+    "20_Total intl calls": 158,
+    "80_Number vmail messages": 195,
+    "80_Churn": 100,
+    "80_Total intl charge": 165,
+    "20_Total intl minutes": 173,
+    "80_Total eve charge": 158,
+    "20_Customer service calls": 203,
+    "80_Total intl calls": 158,
+    "20_Area code": 105,
+    "20_State": 100,
+    "80_State": 100,
+    "20_Voice mail plan": 150,
+    "20_International plan": 173,
+    "formula_result": 120
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "coloringGroups": [],
+    "valueColoringMode": "HASH",
+    "individualColumnsRules": []
+  }
+}

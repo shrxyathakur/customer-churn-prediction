@@ -1,0 +1,486 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "INNER",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "State",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "State",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        },
+        {
+          "column1": {
+            "name": "Area code",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "Area code",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "State",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Account length",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Area code",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "International plan",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Voice mail plan",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Number vmail messages",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total day minutes",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total day calls",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total day charge",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total eve minutes",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total eve calls",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total eve charge",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total night minutes",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total night calls",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total night charge",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total intl minutes",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total intl calls",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Total intl charge",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Customer service calls",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Churn",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "State",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Account length",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Area code",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "International plan",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Voice mail plan",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Number vmail messages",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total day minutes",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total day calls",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total day charge",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total eve minutes",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total eve calls",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total eve charge",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total night minutes",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total night calls",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total night charge",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total intl minutes",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total intl calls",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Total intl charge",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Customer service calls",
+      "type": "string",
+      "table": 1
+    },
+    {
+      "name": "Churn",
+      "type": "string",
+      "table": 1
+    }
+  ],
+  "resolvedSelectedColumns": [],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVESERVER2"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "outputColumnsSelectionMode": "MANUAL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "churn_bigml_80",
+      "prefix": "80",
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "outputColumnsSelectionMode": "ALL",
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "churn_bigml_20",
+      "prefix": "20",
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "80_State",
+            "type": "string"
+          },
+          {
+            "name": "80_Account length",
+            "type": "string"
+          },
+          {
+            "name": "80_Area code",
+            "type": "string"
+          },
+          {
+            "name": "80_International plan",
+            "type": "string"
+          },
+          {
+            "name": "80_Voice mail plan",
+            "type": "string"
+          },
+          {
+            "name": "80_Number vmail messages",
+            "type": "string"
+          },
+          {
+            "name": "80_Total day minutes",
+            "type": "string"
+          },
+          {
+            "name": "80_Total day calls",
+            "type": "string"
+          },
+          {
+            "name": "80_Total day charge",
+            "type": "string"
+          },
+          {
+            "name": "80_Total eve minutes",
+            "type": "string"
+          },
+          {
+            "name": "80_Total eve calls",
+            "type": "string"
+          },
+          {
+            "name": "80_Total eve charge",
+            "type": "string"
+          },
+          {
+            "name": "80_Total night minutes",
+            "type": "string"
+          },
+          {
+            "name": "80_Total night calls",
+            "type": "string"
+          },
+          {
+            "name": "80_Total night charge",
+            "type": "string"
+          },
+          {
+            "name": "80_Total intl minutes",
+            "type": "string"
+          },
+          {
+            "name": "80_Total intl calls",
+            "type": "string"
+          },
+          {
+            "name": "80_Total intl charge",
+            "type": "string"
+          },
+          {
+            "name": "80_Customer service calls",
+            "type": "string"
+          },
+          {
+            "name": "80_Churn",
+            "type": "string"
+          },
+          {
+            "name": "20_State",
+            "type": "string"
+          },
+          {
+            "name": "20_Account length",
+            "type": "string"
+          },
+          {
+            "name": "20_Area code",
+            "type": "string"
+          },
+          {
+            "name": "20_International plan",
+            "type": "string"
+          },
+          {
+            "name": "20_Voice mail plan",
+            "type": "string"
+          },
+          {
+            "name": "20_Number vmail messages",
+            "type": "string"
+          },
+          {
+            "name": "20_Total day minutes",
+            "type": "string"
+          },
+          {
+            "name": "20_Total day calls",
+            "type": "string"
+          },
+          {
+            "name": "20_Total day charge",
+            "type": "string"
+          },
+          {
+            "name": "20_Total eve minutes",
+            "type": "string"
+          },
+          {
+            "name": "20_Total eve calls",
+            "type": "string"
+          },
+          {
+            "name": "20_Total eve charge",
+            "type": "string"
+          },
+          {
+            "name": "20_Total night minutes",
+            "type": "string"
+          },
+          {
+            "name": "20_Total night calls",
+            "type": "string"
+          },
+          {
+            "name": "20_Total night charge",
+            "type": "string"
+          },
+          {
+            "name": "20_Total intl minutes",
+            "type": "string"
+          },
+          {
+            "name": "20_Total intl calls",
+            "type": "string"
+          },
+          {
+            "name": "20_Total intl charge",
+            "type": "string"
+          },
+          {
+            "name": "20_Customer service calls",
+            "type": "string"
+          },
+          {
+            "name": "20_Churn",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}
