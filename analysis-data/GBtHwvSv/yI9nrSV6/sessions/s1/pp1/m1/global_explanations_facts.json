@@ -1,0 +1,15 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "80_Voice mail plan": {
+                "impact": 0.16158057263475395,
+                "rank": 6,
+                "feature": "80_Voice mail plan",
+                "positiveCategoricalValue": "No",
+                "negativeCategoricalValue": "Yes",
+                "infoGain": 0.5000212375401324,
+                "type": "CATEGORICAL"
+            }
+        }
+    }
+}

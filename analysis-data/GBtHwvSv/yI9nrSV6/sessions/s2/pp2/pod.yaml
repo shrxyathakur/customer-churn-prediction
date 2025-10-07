@@ -1,0 +1,83 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dataiku-exec-doctor-preprocessing-66flkkp
+  labels: {"dataiku.com/dku-node-id":"design","dataiku.com/dku-install-id":"nsqh1jxklamy5sbfvibuvgt8","dataiku.com/dku-container-conf":"cpu-m-1-cpu-4gb-ram","dataiku.com/dku-execution-type":"analysis_ml_train","dataiku.com/dku-mltask-session-id":"s2","dataiku.com/dku-execution-id":"doctor-preprocessing-66flkkp","app.dataiku.io/plan-category":"free-trial","dataiku.com/dku-process-type":"backend","dataiku.com/dku-exec-submitter":"shreyaathaakurr-gmail.com","dataiku.com/dku-analysis-id":"gbthwvsv","gis-restricted":"true","dataiku.com/dku-mltask-id":"yi9nrsv6","app.dataiku.io/plan":"online-discover-usd-yearly","app.dataiku.io/dss_version":"13.5.5","dataiku.com/dku-project-key":"customer_churn_prediction"}
+  annotations: {"dataiku.com/dku-analysis-id":"GBtHwvSv","dataiku.com/dku-install-id":"nsqH1jXklAmy5SbFviBuvgt8","dataiku.com/dku-container-conf":"CPU-M-1-cpu-4Gb-Ram","dataiku.com/dku-execution-type":"ANALYSIS_ML_TRAIN","karpenter.sh/do-not-disrupt":"true","dataiku.com/dku-project-key":"CUSTOMER_CHURN_PREDICTION","dataiku.com/dku-exec-submitter":"shreyaathaakurr@gmail.com"}
+  # To add labels to pods and jobs, set a dku.kubernetes.jobs.extraLabels key
+  # To add annotations to pods and jobs, set a dku.kubernetes.jobs.extraAnnotations key
+spec:
+  restartPolicy: Never
+  # __DKU_KUBERNETES_SECURITY_CONTEXT__
+  containers:
+  - name: c
+    image: 538701811630.dkr.ecr.us-east-1.amazonaws.com/gis-stable/dss-gis-alma8-exec-base-13.5.5:1.0.78
+    imagePullPolicy: IfNotPresent # local image
+    env:
+    - name: DKU_EXECUTION_ID
+      value: "doctor-preprocessing-66flkkp"
+    - name: DKU_BACKEND_PORT
+      value: "10005"
+    - name: DKU_BACKEND_HOST
+      value: "dss-headless-node-f1d33a89.space-ebc1b454-dku.svc.cluster.local"
+    - name: DKU_BACKEND_PROTOCOL
+      value: "https"
+    - name: DKU_BASE_PORT
+      value: "10000"
+    - name: DKU_BASE_PROTOCOL
+      value: "https"
+    - name: DKU_SERVER_PORT
+      value: "10005"
+    - name: DKU_SERVER_HOST
+      value: "dss-headless-node-f1d33a89.space-ebc1b454-dku.svc.cluster.local"
+    - name: DKU_SERVER_PROTOCOL
+      value: "https"
+    - name: DKU_SERVER_KIND
+      value: "BACKEND"
+    - name: DKU_SERVER_CERT
+      value: "b64:LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZVakNDQXpxZ0F3SUJBZ0lVSVA1b3lxSHQyZmZYTjhsYUhCYlBXa0hIMFk4d0RRWUpLb1pJaHZjTkFRRUwKQlFBd0ZERVNNQkFHQTFVRUF3d0piRzlqWVd4b2IzTjBNQjRYRFRJMU1EWXlNekF5TXpZd05sb1hEVE0xTURZeQpNVEF5TXpZd05sb3dGREVTTUJBR0ExVUVBd3dKYkc5allXeG9iM04wTUlJQ0lqQU5CZ2txaGtpRzl3MEJBUUVGCkFBT0NBZzhBTUlJQ0NnS0NBZ0VBekpwQXIvdDIwQlpMaXhBdFhkNXNIdUFHWk12MTRiUzFnaFI3VFRjdlJpcFAKQzZHVzRSNnk1c1dLZ3d1YWJxS3FvZmhkQUhvaHB3N3ljaFU5NWxWNTZyVWN3a0NsdTFzaUZXcW0zSnNaN3pnVApFcHMyd09PK1NPYStxT0NPUDBaaFJLYzg2S1kzbDR3TE9XampMcGVKYjl5YUM0SUtUdXZQNVRpdzBaNkNCUlBvCmROdXFIeFh1ZEpadThRREI1NGtGNzVFM1FhWjdMUWNuc2RaTEx0K2VUL1hyT3pQVTRFVGJvMTZ0aTY3amVCZnIKRWhZUEN5alE3bC9zYTd0dkVHSEhjVVdWdDRjdDVkendlYkdXMUx2TzUyaTBLQUx6alNvRHJkK2dpMGNBbmluegpqZmdCcmlqMW1PbEFHVTBraGJqeWQ3YS9sRjNxVEVCak5HbWdIbmZybzdNM2s0akNSSU5iL2lUUjlvNW5oLzluCmtibzFtTlV0Y2VBekdqdVc4ejFNTkk4U1RYdGNFUW03OXhnMHBXTEtjMnFtekpFVmFaMDV5TVp6TVRHQ0VLYzgKQTh6bVl6V1Z2OVlwZDFoSEdRWTAzTCs4MUpXckp3YUdHSkx4d0tkTTl6SytSU1Z6ZFdVMmFEckFWZFQ5MHg0cgppcEJ6QnpHN3ZlMUZ3MkdRbnlCZUZEVmlzclhDS0h2UVZPVjNpTXQ2NFdjTDJkSXpIMnB0YWNDU1hubmhWV241Clhhcm5RYjc2MUYvbGtQYUpmQTNtOGtMZit5M2FHMXJlbWJKV1lUdHBORmM0WWlKVFB1anZMQWNIeFBRNEdQeWYKamFZeFRKNDRqc1VPWDMwbWhubGkvMEhmbnlQUlhJeG9LeUhtTllNTWxBdGtLZkFEdUw4VkdldXpuMFUwK3owQwpBd0VBQWFPQm16Q0JtRENCbFFZRFZSMFJCSUdOTUlHS2dnbHNiMk5oYkdodmMzU0NNR1J6Y3kxa1pYTnBaMjR0CmFHOXpkQzF1YjJSbExXWXhaRE16WVRnNUxYTndZV05sTFdWaVl6RmlORFUwTFdScmRZY0Vmd0FBQVljRUNnQzYKWVlJL1pITnpMV2hsWVdSc1pYTnpMVzV2WkdVdFpqRmtNek5oT0RrdWMzQmhZMlV0WldKak1XSTBOVFF0Wkd0MQpMbk4yWXk1amJIVnpkR1Z5TG14dlkyRnNNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUNBUUFEUXVIMnk4VTIvRnJjCkczS2NZbTVydlZTdjk1ckExZVJnWFBnMEYvTGZvRW1Ucm5UTE4xVHJPenpTdlhXaUJIYXRSczdSSWx0bFJWaGkKT2RZeHVZYVgrNDZSU1VCWFNXMGZtWlA5eWpJczNDVUpLRjVDTW5yWUcyeEdwL2RaQnNqQy9oMjN0QUZuMEs2Swo0SjVDUkVOWllOYkIyYUUzR1RvaXR3QjUzbGdyNHN0Q0k3QjRNV1Q1b2cvZ0ZlU0plS3Q5eGNzYy9ZamhRcHBTCkFUQnF4Ni85TXlsdkdRTkROc1p3TXhrNUwyWXQwUUUzTm9OOEE0WXR1cWR1KzREWnFZazR4YmVtUklJQTNhU2MKbHlvZy93clRlTUsxL1gveEpuS0VWQng2OXZGR3dqVXFkbStBZGhkTUxBbnIxVmxGRzcwbUZpc0ZFaURXMUJZMwo4UXgrYW1KTHJrYjVqVS9WdnZ3MmZHZzZ3NkRzY1VIUG1IVmV0NEU2d1Z2QXdWWkg1NFVYUkd6NGgyK0krOWh1Cms4ZWQwM0NNclVQaVZPSnIzOWJTbFdwbU1PcmExUU5yeFNLVUlWaUkwd2VvNkFSNkJ0Ulc2MGxXSmhoRzNRVVQKVGQvRGxvRDFQQUptTkppV1ZGb2xpQWJoUGF4Ykt0UGVrVjRqa2I0YTBscDVPdmN3RGpqNUlqakFSdkR1djcwZQpMNXZ3Y2lrUEVjMmZOSzhocXJjeDhwNFVLQU12MTlUNjdzY3RUdGJGMTd2Ymw4OFJzdnk4S0dCVHhISm9RTEhMCmxzcmYycTZOcUpQNjZ0TUtyWUpWMUFqRUdYN2xKcGZ0NUVWeXR4bDU0blM0RTYxWDRZNW9JakxKNGhvaXNOTUoKMGF5cDgwZngyamZBREJCYXYrbXNEYVg5TGVLU3N3PT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+    - name: "DKU_API_TICKET"
+      valueFrom:
+        secretKeyRef:
+          name: dkusecret-doctor-preprocessing-66flkkp
+          key: apiticket
+    - name: "DKU_EXECUTION_SECRET_ID"
+      valueFrom:
+        secretKeyRef:
+          name: dkusecret-doctor-preprocessing-66flkkp
+          key: secret_id
+          optional: true
+    - name: REMOTE_WORKER_POOL_ID
+      value: "pool-dhgbxwlk0qlzg99t"
+    - name: DKU_ENABLE_GLOBAL_EMBEDDING_CACHE
+      value: "true"
+    - name: PYTHONIOENCODING
+      value: "UTF-8"
+    - name: DKU_CURRENT_PROJECT_KEY
+      value: "CUSTOMER_CHURN_PREDICTION"
+    resources:
+      requests:
+        cpu: "1.0"
+        memory: "4096Mi"
+      limits:
+        cpu: "1.0"
+        memory: "4096Mi"
+    # __DKU_KUBERNETES_HOSTPATH_VOLUME_MOUNTS__
+    args: ["$(DKU_EXECUTION_ID)"]
+  # __DKU_KUBERNETES_HOSTPATH_HOST_VOLUMES__
+  # __DKU_KUBERNETES_NODESELECTOR__
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: role
+            operator: In
+            values:
+            - compute-node
+  tolerations:
+  - key: gis-compute
+    operator: Equal
+    value: 'true'
+    effect: NoSchedule
+  # __DKU_KUBERNETES_IMAGE_PULL_SECRETS__

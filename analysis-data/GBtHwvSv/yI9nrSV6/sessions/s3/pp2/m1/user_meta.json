@@ -1,0 +1,41 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.575,
+  "description": "",
+  "name": "Logistic Regression (s3)",
+  "labels": [
+    {
+      "key": "trainDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "testDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "evaluationDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "model:algorithm",
+      "value": "LOGISTIC_REGRESSION"
+    },
+    {
+      "key": "model:name",
+      "value": "Logistic Regression (s3)"
+    },
+    {
+      "key": "model:date",
+      "value": "2025-06-30T07:11:48.251+0000"
+    },
+    {
+      "key": "evaluation:date",
+      "value": "2025-06-30T07:11:48.251+0000"
+    }
+  ]
+}

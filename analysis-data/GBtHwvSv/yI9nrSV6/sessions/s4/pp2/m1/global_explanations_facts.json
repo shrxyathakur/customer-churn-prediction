@@ -1,0 +1,134 @@
+{
+    "perClassFacts": {
+        "unique": {
+            "80_Total intl charge": {
+                "impact": 1.850602805656225,
+                "rank": 1,
+                "feature": "80_Total intl charge",
+                "correlation": 0.9315217750283157,
+                "type": "NUMERICAL"
+            },
+            "80_Total intl minutes": {
+                "impact": 1.7879224939990952,
+                "rank": 2,
+                "feature": "80_Total intl minutes",
+                "correlation": -0.9322423488245084,
+                "type": "NUMERICAL"
+            },
+            "80_Total night minutes": {
+                "impact": 1.0849783621079117,
+                "rank": 3,
+                "feature": "80_Total night minutes",
+                "correlation": -0.9312027970142026,
+                "type": "NUMERICAL"
+            },
+            "80_Total eve minutes": {
+                "impact": 0.894990785481726,
+                "rank": 4,
+                "feature": "80_Total eve minutes",
+                "correlation": 0.9445936609806153,
+                "type": "NUMERICAL"
+            },
+            "80_Total eve charge": {
+                "impact": 0.7866659674204389,
+                "rank": 5,
+                "feature": "80_Total eve charge",
+                "correlation": -0.9302118500945963,
+                "type": "NUMERICAL"
+            },
+            "80_Total day minutes": {
+                "impact": 0.5931906794321048,
+                "rank": 6,
+                "feature": "80_Total day minutes",
+                "correlation": 0.9186359085230792,
+                "type": "NUMERICAL"
+            },
+            "80_Total day charge": {
+                "impact": 0.5861942945366322,
+                "rank": 7,
+                "feature": "80_Total day charge",
+                "correlation": -0.9180988515756819,
+                "type": "NUMERICAL"
+            },
+            "80_Voice mail plan": {
+                "impact": 0.28609846592524607,
+                "rank": 8,
+                "feature": "80_Voice mail plan",
+                "positiveCategoricalValue": "No",
+                "negativeCategoricalValue": "Yes",
+                "infoGain": 0.5269079614313803,
+                "type": "CATEGORICAL"
+            },
+            "80_Customer service calls": {
+                "impact": 0.2858474716308587,
+                "rank": 9,
+                "feature": "80_Customer service calls",
+                "correlation": 0.8557740169372268,
+                "type": "NUMERICAL"
+            },
+            "80_total minutes": {
+                "impact": 0.1485345278132305,
+                "rank": 10,
+                "feature": "80_total minutes",
+                "correlation": 0.9396285757725189,
+                "type": "NUMERICAL"
+            },
+            "20_Total day minutes": {
+                "impact": 0.10456773928870682,
+                "rank": 13,
+                "feature": "20_Total day minutes",
+                "correlation": -0.939359108794377,
+                "type": "NUMERICAL"
+            },
+            "80_Total intl calls": {
+                "impact": 0.09275154315705476,
+                "rank": 14,
+                "feature": "80_Total intl calls",
+                "correlation": -0.9250190764189922,
+                "type": "NUMERICAL"
+            },
+            "20_Total day charge": {
+                "impact": 0.09108394525889794,
+                "rank": 15,
+                "feature": "20_Total day charge",
+                "correlation": 0.9237732896916573,
+                "type": "NUMERICAL"
+            },
+            "80_Total night calls": {
+                "impact": 0.031238107832539583,
+                "rank": 16,
+                "feature": "80_Total night calls",
+                "correlation": -0.9452983835239446,
+                "type": "NUMERICAL"
+            },
+            "80_Total day calls": {
+                "impact": 0.024107581508837843,
+                "rank": 17,
+                "feature": "80_Total day calls",
+                "correlation": 0.9301515818307361,
+                "type": "NUMERICAL"
+            },
+            "80_Total eve calls": {
+                "impact": 0.019538317508457397,
+                "rank": 18,
+                "feature": "80_Total eve calls",
+                "correlation": 0.940680502736823,
+                "type": "NUMERICAL"
+            },
+            "80_Total calls": {
+                "impact": 0.009294479717788968,
+                "rank": 19,
+                "feature": "80_Total calls",
+                "correlation": 0.9440989302593845,
+                "type": "NUMERICAL"
+            },
+            "20_Total night calls": {
+                "impact": 0.004033753930252735,
+                "rank": 20,
+                "feature": "20_Total night calls",
+                "correlation": -0.9499042545050941,
+                "type": "NUMERICAL"
+            }
+        }
+    }
+}

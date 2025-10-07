@@ -1,0 +1,575 @@
+{
+    "per_feature": {
+        "80_Total night charge": {
+            "stats": {
+                "min": 1.97,
+                "average": 9.08682329269736,
+                "median": 9.09,
+                "max": 17.19,
+                "p99": 14.21640000000003,
+                "std": 2.2787197450049823
+            },
+            "missing_impute_with_value": 9.08682329269736
+        },
+        "20_Total day calls": {
+            "stats": {
+                "min": 30.0,
+                "average": 101.11681855840928,
+                "median": 101.0,
+                "max": 165.0,
+                "p99": 145.0,
+                "std": 20.262551350353835
+            },
+            "missing_impute_with_value": 101.11681855840928
+        },
+        "20_Number vmail messages": {
+            "stats": {
+                "min": 0.0,
+                "average": 8.427269499349036,
+                "median": 0.0,
+                "max": 51.0,
+                "p99": 42.0,
+                "std": 13.833328586108737
+            },
+            "missing_impute_with_value": 8.427269499349036
+        },
+        "20_Total night calls": {
+            "stats": {
+                "min": 42.0,
+                "average": 99.96899041306663,
+                "median": 99.0,
+                "max": 175.0,
+                "p99": 148.0,
+                "std": 20.34050771737959
+            },
+            "missing_impute_with_value": 99.96899041306663
+        },
+        "20_Total intl charge": {
+            "stats": {
+                "min": 0.0,
+                "average": 2.782573085572257,
+                "median": 2.84,
+                "max": 4.94,
+                "p99": 4.48,
+                "std": 0.7415122994188063
+            },
+            "missing_impute_with_value": 2.782573085572257
+        },
+        "80_Total night minutes": {
+            "stats": {
+                "min": 43.7,
+                "average": 201.92705645638534,
+                "median": 202.1,
+                "max": 381.9,
+                "p99": 315.88400000000075,
+                "std": 50.637670312709126
+            },
+            "missing_impute_with_value": 201.92705645638534
+        },
+        "80_Total eve calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 100.23351875961652,
+                "median": 100.0,
+                "max": 170.0,
+                "p99": 146.0,
+                "std": 19.924913107580004
+            },
+            "missing_impute_with_value": 100.23351875961652
+        },
+        "80_Total calls": {
+            "stats": {}
+        },
+        "20_Total eve minutes": {
+            "stats": {
+                "min": 48.1,
+                "average": 203.0639247248195,
+                "median": 203.8,
+                "max": 361.8,
+                "p99": 317.8,
+                "std": 50.592710316324286
+            },
+            "missing_impute_with_value": 203.0639247248195
+        },
+        "80_Area code": {
+            "stats": {
+                "min": 408.0,
+                "average": 428.9545508344183,
+                "median": 415.0,
+                "max": 510.0,
+                "p99": 510.0,
+                "std": 35.375683530715406
+            },
+            "missing_impute_with_value": 428.9545508344183
+        },
+        "80_Total eve minutes": {
+            "stats": {
+                "min": 0.0,
+                "average": 200.26812640549176,
+                "median": 201.2,
+                "max": 363.7,
+                "p99": 317.5,
+                "std": 51.75413343363939
+            },
+            "missing_impute_with_value": 200.26812640549176
+        },
+        "20_Total eve charge": {
+            "stats": {
+                "min": 4.09,
+                "average": 17.26039057876672,
+                "median": 17.32,
+                "max": 30.75,
+                "p99": 27.01,
+                "std": 4.300431349366242
+            },
+            "missing_impute_with_value": 17.26039057876672
+        },
+        "80_total minutes": {
+            "stats": {}
+        },
+        "80_Total day calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 100.35010060362173,
+                "median": 101.0,
+                "max": 160.0,
+                "p99": 146.0,
+                "std": 19.979856103261035
+            },
+            "missing_impute_with_value": 100.35010060362173
+        },
+        "20_Total night charge": {
+            "stats": {
+                "min": 1.04,
+                "average": 9.035363948396261,
+                "median": 9.08,
+                "max": 16.55,
+                "p99": 14.1,
+                "std": 2.2381790093024536
+            },
+            "missing_impute_with_value": 9.035363948396261
+        },
+        "80_Total day minutes": {
+            "stats": {
+                "min": 0.0,
+                "average": 178.84088057758316,
+                "median": 179.4,
+                "max": 350.8,
+                "p99": 305.1,
+                "std": 53.82073035185462
+            },
+            "missing_impute_with_value": 178.84088057758316
+        },
+        "80_Customer service calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 1.555923777961889,
+                "median": 1.0,
+                "max": 9.0,
+                "p99": 6.0,
+                "std": 1.3112740493302564
+            },
+            "missing_impute_with_value": 1.555923777961889
+        },
+        "80_Total night calls": {
+            "stats": {
+                "min": 36.0,
+                "average": 100.29979879275653,
+                "median": 101.0,
+                "max": 166.0,
+                "p99": 146.0,
+                "std": 19.26247139319161
+            },
+            "missing_impute_with_value": 100.29979879275653
+        },
+        "80_International plan": {
+            "stats": {
+                "mostFrequentValue": "No",
+                "leastFrequentValue": "Yes"
+            },
+            "category_possible_values": [
+                "No",
+                "Yes"
+            ],
+            "category_possible_counts": [
+                7604,
+                845
+            ]
+        },
+        "20_Total day charge": {
+            "stats": {
+                "min": 4.4,
+                "average": 30.697732276008992,
+                "median": 30.28,
+                "max": 56.83,
+                "p99": 53.65,
+                "std": 9.355622158586945
+            },
+            "missing_impute_with_value": 30.697732276008992
+        },
+        "80_Voice mail plan": {
+            "stats": {
+                "mostFrequentValue": "No",
+                "leastFrequentValue": "Yes"
+            },
+            "category_possible_values": [
+                "No",
+                "Yes"
+            ],
+            "category_possible_counts": [
+                6120,
+                2329
+            ]
+        },
+        "20_Total eve calls": {
+            "stats": {
+                "min": 37.0,
+                "average": 99.96662326902592,
+                "median": 101.0,
+                "max": 168.0,
+                "p99": 144.0,
+                "std": 19.239668456118352
+            },
+            "missing_impute_with_value": 99.96662326902592
+        },
+        "80_Total day charge": {
+            "stats": {
+                "min": 0.0,
+                "average": 30.403522310332583,
+                "median": 30.5,
+                "max": 59.64,
+                "p99": 51.87,
+                "std": 9.149467280247308
+            },
+            "missing_impute_with_value": 30.403522310332583
+        },
+        "20_Account length": {
+            "stats": {
+                "min": 1.0,
+                "average": 103.32725766362883,
+                "median": 103.0,
+                "max": 232.0,
+                "p99": 201.0,
+                "std": 41.23781117634085
+            },
+            "missing_impute_with_value": 103.32725766362883
+        },
+        "80_Account length": {
+            "stats": {}
+        },
+        "80_Total intl minutes": {
+            "stats": {
+                "min": 0.0,
+                "average": 10.248703988637708,
+                "median": 10.3,
+                "max": 20.0,
+                "p99": 16.9,
+                "std": 2.8126239094900787
+            },
+            "missing_impute_with_value": 10.248703988637708
+        },
+        "20_Total day minutes": {
+            "stats": {
+                "min": 25.9,
+                "average": 180.5712628713457,
+                "median": 178.1,
+                "max": 334.3,
+                "p99": 315.6,
+                "std": 55.032724405748915
+            },
+            "missing_impute_with_value": 180.5712628713457
+        },
+        "20_Churn": {
+            "stats": {}
+        },
+        "20_Total night minutes": {
+            "stats": {
+                "min": 23.2,
+                "average": 200.78551307847084,
+                "median": 201.7,
+                "max": 367.7,
+                "p99": 313.4,
+                "std": 49.731960628975614
+            },
+            "missing_impute_with_value": 200.78551307847084
+        },
+        "20_Total intl calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 4.515090543259557,
+                "median": 4.0,
+                "max": 18.0,
+                "p99": 12.0,
+                "std": 2.4510435209010484
+            },
+            "missing_impute_with_value": 4.515090543259557
+        },
+        "80_Number vmail messages": {
+            "stats": {
+                "min": 0.0,
+                "average": 8.068883891584804,
+                "median": 0.0,
+                "max": 50.0,
+                "p99": 42.0,
+                "std": 13.65330111517853
+            },
+            "missing_impute_with_value": 8.068883891584804
+        },
+        "80_Churn": {
+            "stats": {}
+        },
+        "80_Total intl charge": {
+            "stats": {
+                "min": 0.0,
+                "average": 2.767625754527163,
+                "median": 2.78,
+                "max": 5.4,
+                "p99": 4.56,
+                "std": 0.7593155196055817
+            },
+            "missing_impute_with_value": 2.767625754527163
+        },
+        "20_Total intl minutes": {
+            "stats": {
+                "min": 0.0,
+                "average": 10.303858444786366,
+                "median": 10.5,
+                "max": 18.3,
+                "p99": 16.6,
+                "std": 2.746331795384263
+            },
+            "missing_impute_with_value": 10.303858444786366
+        },
+        "80_Total eve charge": {
+            "stats": {
+                "min": 0.0,
+                "average": 17.023008640075748,
+                "median": 17.1,
+                "max": 30.91,
+                "p99": 26.99,
+                "std": 4.399094271776375
+            },
+            "missing_impute_with_value": 17.023008640075748
+        },
+        "20_Customer service calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 1.5548585631435672,
+                "median": 1.0,
+                "max": 8.0,
+                "p99": 5.0,
+                "std": 1.3175328765082093
+            },
+            "missing_impute_with_value": 1.5548585631435672
+        },
+        "80_Total intl calls": {
+            "stats": {
+                "min": 0.0,
+                "average": 4.516155758077879,
+                "median": 4.0,
+                "max": 20.0,
+                "p99": 13.0,
+                "std": 2.522954390475229
+            },
+            "missing_impute_with_value": 4.516155758077879
+        },
+        "20_Area code": {
+            "stats": {
+                "min": 408.0,
+                "average": 428.9545508344183,
+                "median": 415.0,
+                "max": 510.0,
+                "p99": 510.0,
+                "std": 35.375683530715406
+            },
+            "missing_impute_with_value": 428.9545508344183
+        },
+        "20_State": {
+            "stats": {
+                "mostFrequentValue": "WV",
+                "leastFrequentValue": "CA"
+            },
+            "category_possible_values": [
+                "WV",
+                "OR",
+                "NY",
+                "ID",
+                "MN",
+                "MI",
+                "AL",
+                "VT",
+                "KS",
+                "WI",
+                "NM",
+                "AZ",
+                "OH",
+                "TX",
+                "IN",
+                "NJ",
+                "CT",
+                "WY",
+                "NE",
+                "RI",
+                "MT",
+                "WA",
+                "MS",
+                "ND",
+                "UT",
+                "KY",
+                "VA",
+                "MO",
+                "NC",
+                "TN",
+                "MA",
+                "IL",
+                "DE",
+                "LA",
+                "MD",
+                "SD",
+                "NH",
+                "SC",
+                "ME",
+                "CO",
+                "FL",
+                "OK",
+                "DC",
+                "AR",
+                "PA",
+                "AK",
+                "HI",
+                "NV",
+                "GA",
+                "IA",
+                "CA"
+            ],
+            "category_possible_counts": [
+                353,
+                285,
+                269,
+                263,
+                241,
+                235,
+                229,
+                227,
+                219,
+                218,
+                215,
+                215,
+                215,
+                207,
+                207,
+                205,
+                204,
+                203,
+                202,
+                200,
+                195,
+                188,
+                187,
+                183,
+                175,
+                168,
+                167,
+                163,
+                157,
+                144,
+                140,
+                140,
+                137,
+                136,
+                135,
+                124,
+                124,
+                121,
+                119,
+                111,
+                107,
+                101,
+                95,
+                93,
+                77,
+                77,
+                74,
+                67,
+                50,
+                42,
+                40
+            ]
+        },
+        "80_State": {
+            "stats": {}
+        },
+        "20_Voice mail plan": {
+            "stats": {
+                "mostFrequentValue": "No",
+                "leastFrequentValue": "Yes"
+            },
+            "category_possible_values": [
+                "No",
+                "Yes"
+            ],
+            "category_possible_counts": [
+                6008,
+                2441
+            ]
+        },
+        "20_International plan": {
+            "stats": {
+                "mostFrequentValue": "No",
+                "leastFrequentValue": "Yes"
+            },
+            "category_possible_values": [
+                "No",
+                "Yes"
+            ],
+            "category_possible_counts": [
+                7818,
+                631
+            ]
+        }
+    },
+    "feature_order": [
+        "80_Total night charge",
+        "20_Total day calls",
+        "20_Number vmail messages",
+        "20_Total night calls",
+        "20_Total intl charge",
+        "80_Total night minutes",
+        "80_Total eve calls",
+        "80_Total calls",
+        "20_Total eve minutes",
+        "80_Area code",
+        "80_Total eve minutes",
+        "20_Total eve charge",
+        "80_total minutes",
+        "80_Total day calls",
+        "20_Total night charge",
+        "80_Total day minutes",
+        "80_Customer service calls",
+        "80_Total night calls",
+        "80_International plan",
+        "20_Total day charge",
+        "80_Voice mail plan",
+        "20_Total eve calls",
+        "80_Total day charge",
+        "20_Account length",
+        "80_Account length",
+        "80_Total intl minutes",
+        "20_Total day minutes",
+        "20_Churn",
+        "20_Total night minutes",
+        "20_Total intl calls",
+        "80_Number vmail messages",
+        "80_Churn",
+        "80_Total intl charge",
+        "20_Total intl minutes",
+        "80_Total eve charge",
+        "20_Customer service calls",
+        "80_Total intl calls",
+        "20_Area code",
+        "20_State",
+        "80_State",
+        "20_Voice mail plan",
+        "20_International plan"
+    ]
+}

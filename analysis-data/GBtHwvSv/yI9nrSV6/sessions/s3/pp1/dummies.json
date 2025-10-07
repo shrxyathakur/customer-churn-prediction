@@ -1,0 +1,32 @@
+{
+    "details": {
+        "80_International plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "80_Voice mail plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "20_Voice mail plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "20_International plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        }
+    }
+}

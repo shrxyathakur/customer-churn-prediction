@@ -1,0 +1,108 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 5,
+    "searchStrategy": "GRID",
+    "importantParams": [
+      {
+        "name": "penalty",
+        "vals": [
+          "l2"
+        ]
+      },
+      {
+        "name": "C",
+        "vals": [
+          "0.01",
+          "0.1",
+          "1.0",
+          "10.0",
+          "100.0"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "C",
+        "val": "100.0"
+      },
+      {
+        "name": "penalty",
+        "val": "l2"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 242
+      },
+      {
+        "name": "Loading test set",
+        "time": 25
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 121
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 183
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 46
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 6218
+      },
+      {
+        "name": "Fitting model",
+        "time": 144
+      },
+      {
+        "name": "Saving model",
+        "time": 109
+      },
+      {
+        "name": "Scoring model",
+        "time": 1062
+      },
+      {
+        "name": "Preparing explainability",
+        "time": 4360
+      }
+    ]
+  },
+  "startTime": 1751267495704,
+  "endTime": 1751267508251,
+  "preprocessingTime": 636,
+  "trainingTime": 11911,
+  "hyperparamsSearchTime": 6218,
+  "pythonVersion": "3.9.20",
+  "packagesVersion": {
+    "pandas": "2.2.3",
+    "scikit-learn": "1.3.2",
+    "scipy": "1.13.1",
+    "lightgbm": "4.6.0",
+    "flask": "2.2.5",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "xgboost": "1.7.6",
+    "werkzeug": "3.1.3",
+    "statsmodels": "0.14.4",
+    "pillow": "11.2.1",
+    "markupsafe": "3.0.2",
+    "cloudpickle": "1.5.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "absoluteImportance": {
+        "80_Customer service calls": 0.17043656083885447,
+        "80_Total day charge": 0.2630896099374749,
+        "80_total minutes": 0.16622689857953876,
+        "80_International plan": 0.18299534266077444,
+        "80_Total day minutes": 0.1931027383092609,
+        "20_State": 0.06647854099585805,
+        "80_Total intl charge": 0.07711090864618066,
+        "80_Total eve charge": 0.0951646953209448,
+        "80_Total intl minutes": 0.07102883678532651,
+        "80_Total eve minutes": 0.0896916798117139,
+        "80_Total night minutes": 0.07495237046160136,
+        "80_Total night charge": 0.07424027341664391,
+        "80_Total intl calls": 0.1058197569396504,
+        "80_Total calls": 0.055179059169370014,
+        "80_Total day calls": 0.06354014309796,
+        "80_Total night calls": 0.05141659257505228,
+        "80_Voice mail plan": 0.161580572634754,
+        "80_Total eve calls": 0.06132448264625933,
+        "80_Number vmail messages": 0.08228872517273911,
+        "20_Total night minutes": 0.029571839558385483
+    }
+}

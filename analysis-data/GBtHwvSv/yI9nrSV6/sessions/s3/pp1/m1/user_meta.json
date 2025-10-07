@@ -1,0 +1,41 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.25,
+  "description": "",
+  "name": "Random forest (s3)",
+  "labels": [
+    {
+      "key": "trainDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "testDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "evaluationDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "model:algorithm",
+      "value": "RANDOM_FOREST_CLASSIFICATION"
+    },
+    {
+      "key": "model:name",
+      "value": "Random forest (s3)"
+    },
+    {
+      "key": "model:date",
+      "value": "2025-06-30T07:12:05.639+0000"
+    },
+    {
+      "key": "evaluation:date",
+      "value": "2025-06-30T07:12:05.639+0000"
+    }
+  ]
+}

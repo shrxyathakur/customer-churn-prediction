@@ -1,0 +1,41 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.625,
+  "description": "",
+  "name": "Logistic Regression (s2)",
+  "labels": [
+    {
+      "key": "trainDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "testDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "evaluationDataset:dataset-name",
+      "value": "churn_data_train"
+    },
+    {
+      "key": "model:algorithm",
+      "value": "LOGISTIC_REGRESSION"
+    },
+    {
+      "key": "model:name",
+      "value": "Logistic Regression (s2)"
+    },
+    {
+      "key": "model:date",
+      "value": "2025-06-30T06:46:24.258+0000"
+    },
+    {
+      "key": "evaluation:date",
+      "value": "2025-06-30T06:46:24.258+0000"
+    }
+  ]
+}

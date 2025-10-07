@@ -1,0 +1,88 @@
+{
+    "details": {
+        "80_International plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "80_Voice mail plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "20_State": {
+            "levels": [
+                "WV",
+                "OR",
+                "NY",
+                "ID",
+                "MN",
+                "MI",
+                "AL",
+                "VT",
+                "KS",
+                "WI",
+                "AZ",
+                "NM",
+                "OH",
+                "TX",
+                "IN",
+                "NJ",
+                "CT",
+                "WY",
+                "NE",
+                "RI",
+                "MT",
+                "WA",
+                "MS",
+                "ND",
+                "UT",
+                "KY",
+                "VA",
+                "MO",
+                "NC",
+                "TN",
+                "IL",
+                "MA",
+                "DE",
+                "LA",
+                "MD",
+                "SD",
+                "NH",
+                "SC",
+                "ME",
+                "CO",
+                "FL",
+                "OK",
+                "DC",
+                "AR",
+                "PA",
+                "AK",
+                "HI",
+                "NV",
+                "GA",
+                "IA",
+                "CA"
+            ],
+            "with_others": true
+        },
+        "20_Voice mail plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        },
+        "20_International plan": {
+            "levels": [
+                "No",
+                "Yes"
+            ],
+            "with_others": true
+        }
+    }
+}

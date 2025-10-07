@@ -1,0 +1,115 @@
+{
+  "state": "DONE",
+  "preSearchDescription": {
+    "gridLength": 2,
+    "searchStrategy": "GRID",
+    "importantParams": [
+      {
+        "name": "trees",
+        "vals": [
+          "100"
+        ]
+      },
+      {
+        "name": "depth",
+        "vals": [
+          "6",
+          "16"
+        ]
+      },
+      {
+        "name": "min_samples",
+        "vals": [
+          "1"
+        ]
+      }
+    ]
+  },
+  "postSearchDescription": {
+    "importantParams": [
+      {
+        "name": "trees",
+        "val": "100"
+      },
+      {
+        "name": "depth",
+        "val": "16"
+      },
+      {
+        "name": "min_samples",
+        "val": "1"
+      }
+    ]
+  },
+  "resumed": false,
+  "timeOrderingEnabled": false,
+  "sampleWeightsEnabled": false,
+  "modelId": "m1",
+  "progress": {
+    "top_level_todo": [],
+    "stack": [],
+    "top_level_done": [
+      {
+        "name": "Loading train set",
+        "time": 227
+      },
+      {
+        "name": "Loading test set",
+        "time": 27
+      },
+      {
+        "name": "Collecting statistics",
+        "time": 86
+      },
+      {
+        "name": "Preprocessing train set",
+        "time": 163
+      },
+      {
+        "name": "Preprocessing test set",
+        "time": 51
+      },
+      {
+        "name": "Hyperparameter searching",
+        "time": 14104
+      },
+      {
+        "name": "Fitting model",
+        "time": 1601
+      },
+      {
+        "name": "Saving model",
+        "time": 1199
+      },
+      {
+        "name": "Scoring model",
+        "time": 765
+      },
+      {
+        "name": "Preparing explainability",
+        "time": 6320
+      }
+    ]
+  },
+  "startTime": 1751008287723,
+  "endTime": 1751008312312,
+  "preprocessingTime": 573,
+  "trainingTime": 24016,
+  "hyperparamsSearchTime": 14104,
+  "pythonVersion": "3.9.20",
+  "packagesVersion": {
+    "pandas": "2.2.3",
+    "scikit-learn": "1.3.2",
+    "scipy": "1.13.1",
+    "lightgbm": "4.6.0",
+    "flask": "2.2.5",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "xgboost": "1.7.6",
+    "werkzeug": "3.1.3",
+    "statsmodels": "0.14.4",
+    "pillow": "11.2.1",
+    "markupsafe": "3.0.2",
+    "cloudpickle": "1.5.0"
+  }
+}
