@@ -1,66 +1,55 @@
-c# 📊 Customer Churn Prediction using Machine Learning (Dataiku)
+# Customer Churn Prediction
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
-![Machine Learning](https://img.shields.io/badge/ML-RandomForest%20%7C%20KMeans-orange)
-![Platform](https://img.shields.io/badge/Platform-Dataiku-green)
-![Dataset](https://img.shields.io/badge/Dataset-Kaggle-lightgrey)
+## Overview
+This project focuses on predicting telecom customer churn using Machine Learning models in **Dataiku DSS**. It combines **K-Means clustering** for customer segmentation and **Random Forest classification** for churn prediction, helping telecom companies identify at-risk customers and reduce revenue loss.
 
-## 🧠 Overview
-This project predicts **telecom customer churn** using **Machine Learning models** built in **Dataiku**.  
-It combines **K-Means Clustering** for segmentation and **Random Forest** for churn prediction, helping identify at-risk customers and reduce revenue loss.
+## Objectives
+- Analyze customer behavior to detect churn patterns.
+- Clean and prepare data for modeling.
+- Segment customers using K-Means clustering.
+- Predict churn probability using Random Forest.
+- Visualize key insights through Dataiku dashboards.
 
----
+## Tools & Technologies
+- **Platform:** Dataiku DSS
+- **Language:** Python
+- **Libraries:** pandas, numpy, scikit-learn
+- **Dataset:** Telecom Churn Dataset (Kaggle)
 
-## 🎯 Objectives
-- Analyze customer behavior to detect churn patterns.  
-- Clean and prepare data for modeling.  
-- Segment customers using **K-Means**.  
-- Predict churn probability using **Random Forest**.  
-- Visualize key insights through **Dataiku Dashboards**.
+## Methodology
+1. **Data Import & Cleaning**  
+   - Imported the dataset into Dataiku DSS and handled missing values, duplicates, and categorical encoding.
 
----
+2. **Exploratory Data Analysis (EDA)**  
+   - Analyzed customer demographics, usage patterns, and service interactions to identify potential churn indicators.
 
-## ⚙️ Tools & Tech
-- **Platform:** Dataiku  
-- **Language:** Python  
-- **Libraries:** pandas, numpy, scikit-learn  
-- **Dataset:** [Telecom Churn – Kaggle](https://www.kaggle.com/datasets/mnassrib/telecom-churn-datasets)
+3. **Customer Segmentation**  
+   - Applied K-Means clustering to segment customers based on usage patterns and service interactions.
 
----
+4. **Churn Prediction**  
+   - Trained a Random Forest classifier to predict churn probability.
+   - Evaluated model performance using accuracy, precision, recall, and feature importance.
 
-## 🧩 Methodology
-1. Import and clean telecom churn data.  
-2. Perform EDA to find churn patterns.  
-3. Cluster customers with **K-Means**.  
-4. Train **Random Forest** to predict churn.  
-5. Evaluate accuracy and interpret key drivers.  
+5. **Insights & Visualization**  
+   - Created dashboards in Dataiku DSS to visualize clusters, churn probabilities, and key churn drivers.
 
----
-
-## 📈 Results
-- Combined clustering + classification improved accuracy.  
-- Major churn indicators:
-  - High customer service calls  
+## Key Findings
+- Major churn indicators included:  
+  - Frequent customer service calls  
   - Short contract duration  
-  - High total minutes used  
+  - High service usage (minutes, data)  
+- Combining segmentation with classification improved model interpretability and allowed targeted retention strategies.
 
----
+## How to Run
+1. Open the project in Dataiku DSS.
+2. Import the telecom churn dataset.
+3. Run the data preparation flow.
+4. Execute the K-Means clustering and Random Forest recipes.
+5. Explore dashboards for insights and analysis.
 
-## 🚀 How to Run
-1. Open project in **Dataiku DSS**.  
-2. Import the dataset (from Kaggle).  
-3. Run the **data preparation flow**.  
-4. Execute **K-Means** and **Random Forest** recipes.  
-5. View dashboards for churn insights.
+## Conclusion
+Accurate churn prediction enables telecom companies to implement data-driven retention strategies, reduce revenue loss, and improve customer satisfaction.
 
----
-
-## 🧾 Conclusion
-Accurately predicting churn enables telecom companies to design better **retention strategies** and improve customer satisfaction through **data-driven decisions**.
-
----
-
-## 👨‍💻 Author
-**Project:** Customer Churn Prediction  
-**Developed by:** *[Shreya Thakur]*
+## Author
+**Shreya Thakur**
 
